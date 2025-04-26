@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal de Disciplinas</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="nav-externa">
+      <button onclick="mostrarDisciplina('matematica')">Matemática</button>
+      <button onclick="mostrarDisciplina('fisica')">Física</button>
+      <button onclick="mostrarDisciplina('quimica')">Química</button>
+    </div>
+    <nav class="nav-interna">
+      <a href="#provas">Provas</a>
+      <a href="#atividades">Atividades</a>
+      <a href="#relatorios">Relatórios</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="matematica" class="disciplina">
+      <h2>Matemática</h2>
+      <div id="provas" class="conteudo"><h3>Provas</h3><p>Prova 1, Prova 2...</p></div>
+      <div id="atividades" class="conteudo"><h3>Atividades</h3><p>Lista 1, Lista 2...</p></div>
+      <div id="relatorios" class="conteudo"><h3>Relatórios</h3><p>Relatório de Funções...</p></div>
+    </section>
+
+    <section id="fisica" class="disciplina hidden">
+      <h2>Física</h2>
+      <div class="conteudo"><h3>Provas</h3><p>Prova de Cinemática...</p></div>
+      <div class="conteudo"><h3>Atividades</h3><p>Experimentos e listas...</p></div>
+      <div class="conteudo"><h3>Relatórios</h3><p>Relatório de Laboratório...</p></div>
+    </section>
+
+    <section id="quimica" class="disciplina hidden">
+      <h2>Química</h2>
+      <div class="conteudo"><h3>Provas</h3><p>Prova de Ligações Químicas...</p></div>
+      <div class="conteudo"><h3>Atividades</h3><p>Exercícios de Tabela Periódica...</p></div>
+      <div class="conteudo"><h3>Relatórios</h3><p>Relatório de Reações...</p></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Portal Educacional Integrado. Todos os direitos reservados.</p>
+    <p>Contato: escola@ensino.br | (11) 99999-9999</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
